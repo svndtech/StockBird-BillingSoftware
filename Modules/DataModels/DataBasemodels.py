@@ -41,7 +41,7 @@ class Employee(Base):
 
     ssn = Column("id", Integer, primary_key=True)
     employee_id = Column("employee_id", Integer)
-    department = Column(Integer, ForeignKey("department.id"))
+    department = Column(Integer, ForeignKey("department.id"),cascade=all)
     name = Column("name", String)
     dob = Column("dob", Date)
     mobile = Column("mobile", Integer)
