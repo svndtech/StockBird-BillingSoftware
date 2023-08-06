@@ -1,0 +1,151 @@
+{
+    "user_groups": [
+        {
+            "id": 101,
+            "group_name": "Admin"
+        },
+        {
+            "id": 102,
+            "group_name": "Manager"
+        },
+        {
+            "id": 103,
+            "group_name": "Stock Manager"
+        },
+        {
+            "id": 104,
+            "group_name": "Biller"
+        },
+        {
+            "id": 105,
+            "group_name": "Tech Support"
+        }
+    ],
+    "departments": [
+        {
+            "id": 101,
+            "department": "Management"
+        },
+        {
+            "id": 100,
+            "department": "Tech Support"
+        }
+    ]
+    ,
+    "employees": [
+        {
+            "id": 100001,
+            "employee_id": 111110,
+            "department": 100,
+            "user_group": 105,
+            "name": "Tech Support",
+            "dob": "1998-11-30",
+            "mobile": 7299288334,
+            "address": "Chennai"
+        },
+        {
+            "id": 100002,
+            "employee_id": 100001,
+            "department": 101,
+            "user_group": 101,
+            "name": "adminAcc001",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100003,
+            "employee_id": 100002,
+            "department": 101,
+            "user_group": 101,
+            "name": "adminAcc002",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100004,
+            "employee_id": 100003,
+            "department": 101,
+            "user_group": 102,
+            "name": "managerAcc001",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100005,
+            "employee_id": 100004,
+            "department": 101,
+            "user_group": 102,
+            "name": "managerAcc002",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100006,
+            "employee_id": 100005,
+            "department": 101,
+            "user_group": 103,
+            "name": "stockManagerAcc001",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100007,
+            "employee_id": 100006,
+            "department": 101,
+            "user_group": 103,
+            "name": "stockManagerAcc002",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100008,
+            "employee_id": 100007,
+            "department": 101,
+            "user_group": 104,
+            "name": "billerAcc001",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100009,
+            "employee_id": 100008,
+            "department": 101,
+            "user_group": 104,
+            "name": "billerAcc002",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        },
+        {
+            "id": 100010,
+            "employee_id": 100009,
+            "department": 101,
+            "user_group": 104,
+            "name": "billerAcc002",
+            "dob": "1998-11-30",
+            "mobile": 1000000001,
+            "address": "Chennai"
+        }
+    ],
+    "users":[
+        {
+            "user_id" : 0,
+            "employee_id" : 0,
+            "username" : "",
+            "password" : "",
+            "created_on" : "",
+            "updated_on" : ""
+
+        }
+    ]
+
+    
+}
+

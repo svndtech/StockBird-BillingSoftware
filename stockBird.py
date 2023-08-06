@@ -1,13 +1,17 @@
-from Modules import root
+# from Modules import root
 import initializer
 
-if __name__ == "__main__":
+def main():
 
     init = initializer.Initializer()
-    init.initialize_environment()
+    init.initialize_tables()
+    # print("Final ",init.initialize_environment())
+    # init.install_python() if init.initialize_environment()==False else print("Python Already Exists")
+    pass
 
-    stockApp = root.rootGui()
-    stockRoot = stockApp.getRoot()
-    stockApp.getLoginFrame()
+if __name__ == "__main__":
+    main()
+
+    
     
     
