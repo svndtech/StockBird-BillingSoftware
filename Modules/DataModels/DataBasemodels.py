@@ -55,15 +55,27 @@ class PurchaseHistory(Base):
     
     def __repr__(self):
         pass
-
-
-
+    
 
 class Bills(Base):
     __tablename__ = "bills"    
 
     bill_id = Column("bill_id", Integer,primary_key=True)
-    pass 
+    items_count =  Column("items_count", Integer)
+    member = Column("member",ForeignKey("members.member_id"))
+    ordered_items = Column("ordered_items", String)
+    billing_date = Column("billing_date",Date)
+    billing_time = Column("billing_time",Time)
+
+    def __init__(self,bill_id,items_count,ordered_items,billing_date,billing_time):
+        self.bill_id = bill_id
+        self.items_count = items_count
+        self.ordered_items = ordered_items
+        self.billing_date = billing_date
+        self.billing_time = billing_time
+
+    def __repr__(self):
+        return f"{self.bill_id} by {self.member} on {self.billing_date} {self.billing_time}"    
 
 
 class Members(Base):
@@ -120,7 +132,7 @@ class Employees(Base):
 
     ssn = Column("id", Integer, primary_key=True)
     employee_id = Column("employee_id", Integer)
-    department = Column(Integer, ForeignKey("department.id"),cascade=all)
+    department = Column(Integer, ForeignKey("departments.id"),cascade=all)
     name = Column("name", String)
     dob = Column("dob", Date)
     mobile = Column("mobile", Integer)
@@ -144,7 +156,7 @@ class Users(Base):
     __tablename__ = "user_accounts"
 
     user_id = Column("user_id", Integer, primary_key=True)
-    employee_id = Column("employee_id", ForeignKey("employee.employee_id"))
+    employee_id = Column("employee_id", ForeignKey("employees.employee_id"))
     username = Column("user_name", String)
     password = Column("password", String)
     created_on = Column("created_on", DateTime)
